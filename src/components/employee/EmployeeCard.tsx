@@ -1,5 +1,4 @@
-import React from 'react'
-
+// Images
 import jessicaIMG from './Jessica.png';
 
 const EmployeeCard = () => {

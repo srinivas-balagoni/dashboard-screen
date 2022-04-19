@@ -1,9 +1,9 @@
-// components
-import Drawer from './components/Drawer';
-import MiniDrawer from './components/NewDrawer'
-import Employee from './components/employee/Employee';
+// MUI
 import { Grid } from '@mui/material';
-
+// Components
+import Drawer from './components/Drawer';
+import Employee from './components/employee/Employee';
+// CSS
 import "./App.css";
 
 function App() {

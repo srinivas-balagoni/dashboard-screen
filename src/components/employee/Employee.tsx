@@ -1,8 +1,9 @@
-import React from 'react'
-import EmployeeDetails from './EmployeeDetails'
-import Header from '../Header'
-import DsrDetails from './dsrDetails.jsx/DsrDetails'
+// MUI
 import { Box, Grid } from '@mui/material'
+// Components
+import Header from '../Header'
+import EmployeeDetails from './EmployeeDetails'
+import DsrDetails from './dsrDetails.jsx/DsrDetails'
 import EligibilityDetails from './eligibility/EligibilityDetails'
 import TeamComponent from './teamMembers/TeamComponent'
 import QucikLinks from './quickLinks/QucikLinks'

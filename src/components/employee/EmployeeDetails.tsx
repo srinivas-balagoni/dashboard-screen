@@ -1,5 +1,6 @@
+// MUI
 import { Box } from '@mui/material'
-import React from 'react'
+// Components
 import Details from './Details'
 import EmployeeCard from './EmployeeCard'
 
