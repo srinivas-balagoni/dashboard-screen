@@ -1,23 +1,28 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // MUI
 import { Grid } from '@mui/material';
 // Components
 import Drawer from './components/Drawer';
 import Employee from './components/employee/Employee';
+import Manager from "./components/manager/Manager";
 // CSS
 import "./App.css";
 
 function App() {
   return (
-    <div className="App" style={{}}>
+    <BrowserRouter>
       <Grid container>
           <Grid item xs={2.3}>
             <Drawer />
           </Grid>
           <Grid item xs={9.7} sx={{background: "#F2F2F2", px: 5}}>
-            <Employee />
+              <Routes>
+                <Route path="/employee" element={<Employee />}/>
+                <Route path="/manager" element={<Manager />}/>
+              </Routes>
           </Grid>
       </Grid>
-    </div>
+    </BrowserRouter>
   );
 }
 
