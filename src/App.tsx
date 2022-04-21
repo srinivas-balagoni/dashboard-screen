@@ -1,4 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// Redux
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
 // MUI
 import { Grid } from '@mui/material';
 // Components
@@ -7,6 +11,7 @@ import Employee from './components/employee/Employee';
 import Manager from "./components/manager/Manager";
 // CSS
 import "./App.css";
+
 
 function App() {
   return (
@@ -26,4 +31,10 @@ function App() {
   );
 }
 
-export default App;
+const AppWrapper = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+)
+
+export default AppWrapper;
